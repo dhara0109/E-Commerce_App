@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/m1"
+            android:layout_centerVertical="true">
+        </ImageView>
+
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/cart"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+        </ImageView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+        <TextView
+            android:id="@+id/tag_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tag_name"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:layout_centerHorizontal="true"
+            tools:ignore="InvalidId">
+        </TextView>
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_below="@id/tag_name"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_marginLeft="40dp"-->
+<!--            android:layout_marginRight="40dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:elevation="10dp">-->
+<!--            -->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Search..."-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="15dp">-->
+<!--            </TextView>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:src="@drawable/search"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginRight="15dp">-->
+<!--            </ImageView>-->
+<!--        </RelativeLayout>-->
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/corner"
+                android:elevation="4dp"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/cake"></ImageView>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cake"
+                android:textAlignment="center"
+                android:gravity="center_horizontal">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/corner"
+                android:elevation="4dp"
+                android:layout_margin="4dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/pastry"
+                    android:layout_centerInParent="true">
+                </ImageView>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pastry"
+                android:textAlignment="center"
+                android:gravity="center_horizontal">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/corner"
+                android:elevation="4dp"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/cupcake"></ImageView>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cup Cake"
+                android:textAlignment="center"
+                android:gravity="center_horizontal">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/corner"
+                android:elevation="4dp"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/cookies_icon"></ImageView>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cookies"
+                android:textAlignment="center"
+                android:gravity="center_horizontal">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/corner"
+                android:elevation="4dp"
+                android:layout_margin="4dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/donut"
+                    android:layout_centerInParent="true">
+                </ImageView>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Donut"
+                android:textAlignment="center"
+                android:gravity="center_horizontal">
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_recyclerview"
+            android:orientation="vertical" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

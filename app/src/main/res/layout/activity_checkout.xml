@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CheckoutActivity">
+
+
+    <EditText
+        android:id="@+id/PersonName"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="144dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:background="@drawable/rounded_shape"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/Emailaddress"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:background="@drawable/rounded_shape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingLeft="15dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/PersonName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/PersonName"
+        app:layout_constraintTop_toBottomOf="@+id/PersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/contactNumber"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        android:background="@drawable/rounded_shape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingLeft="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/Emailaddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Emailaddress"
+        app:layout_constraintTop_toBottomOf="@+id/Emailaddress"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/PostalAddress"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Postal Address"
+        android:background="@drawable/rounded_shape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingLeft="15dp"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="@+id/contactNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/contactNumber"
+        app:layout_constraintTop_toBottomOf="@+id/contactNumber"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/PostalCode"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Postal Code"
+        android:background="@drawable/rounded_shape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingLeft="15dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/PostalAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/PostalAddress"
+        app:layout_constraintTop_toBottomOf="@+id/PostalAddress"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/creditDetails"
+        android:layout_width="242dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="64dp"
+        android:text="Enter Credit Card Details"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/PostalCode"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/PostalCode"
+        app:layout_constraintTop_toBottomOf="@+id/PostalCode" />
+
+    <EditText
+        android:id="@+id/cardHolder"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@drawable/rounded_shape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingLeft="15dp"
+        android:hint="Card Holder Name"
+        app:layout_constraintEnd_toEndOf="@+id/creditDetails"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/creditDetails"
+        app:layout_constraintTop_toBottomOf="@+id/creditDetails"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/cardNumber"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:background="@drawable/rounded_shape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingLeft="15dp"
+        android:hint="Enter Credit/Debit Card Number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/cardHolder"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardHolder"
+        app:layout_constraintTop_toBottomOf="@+id/cardHolder"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/cvv"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:background="@drawable/rounded_shape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingLeft="15dp"
+        android:inputType="numberPassword"
+        android:hint="CVV"
+        app:layout_constraintEnd_toEndOf="@+id/cardNumber"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/ExpDate"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:maxLength="5"
+        android:background="@drawable/rounded_shape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingLeft="15dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Exp. Date"
+        app:layout_constraintStart_toStartOf="@+id/cardNumber"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/checkOutBtn"
+        android:layout_width="141dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded_shape"
+        android:text="Check Out"
+        android:textColor="@color/black"
+        android:letterSpacing=".2"
+        app:layout_constraintEnd_toEndOf="@+id/cvv"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/ExpDate"
+        app:layout_constraintTop_toBottomOf="@+id/ExpDate"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/backMainPage"
+        android:layout_width="319dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="28dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/l2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

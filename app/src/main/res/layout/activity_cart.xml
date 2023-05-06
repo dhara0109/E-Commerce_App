@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CartActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/CartRecyclerView"
+        android:layout_width="396dp"
+        android:layout_height="348dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/CheckoutBtn"
+        android:layout_width="157dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/rounded_shape"
+        android:text="Go For Checkout"
+        app:layout_constraintEnd_toEndOf="@+id/CartRecyclerView"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CartRecyclerView"
+        tools:ignore="TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

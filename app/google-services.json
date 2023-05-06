@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "111217711949",
+    "project_id": "tastebuds-8e4a5",
+    "storage_bucket": "tastebuds-8e4a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111217711949:android:18fc4d9639d1029d1bf504",
+        "android_client_info": {
+          "package_name": "com.example.dhara_parmar_project2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111217711949-f6prtssm2qumaq80ebnk8pota77ka4q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByrGAy5h01lJcFbtFPrxr6dqzQpZYjxaA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111217711949-f6prtssm2qumaq80ebnk8pota77ka4q3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
